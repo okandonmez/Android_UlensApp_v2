@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/expenseId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"/>
+
+    <ImageView
+        android:id="@+id/iconExpense"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/txtPendingExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="5dp"
+        android:text="Okan Dönmez" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d2d2d2"/>
+
+    <TextView
+        android:id="@+id/txtMerchantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtPendingExpense"
+        android:layout_below="@+id/txtPendingExpense"
+        android:layout_marginTop="3dp"
+        android:text="Starbucks Store"
+        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtDateRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtPendingExpense"
+        android:layout_below="@+id/txtMerchantName"
+        android:layout_marginTop="3dp"
+        android:text="9 Tem"
+        android:textColor="#b2b2b2" />
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/iconExpense"
+        android:layout_marginEnd="20dp"
+        android:text="30.00"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+</RelativeLayout>

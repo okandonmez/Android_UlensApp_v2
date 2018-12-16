@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlInvoiceDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ulens.ulensapp.AddInvoiceActivities.InvoiceDetail">
+
+    <ImageView
+        android:id="@+id/imgBillDetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgBillDetail"
+        android:background="@color/UlensColor">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="39dp"
+            android:background="@android:color/white" />
+
+        <EditText
+            android:id="@+id/edtNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Kurum Adı"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textColorLink="#00000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:theme="@style/MyEditTextTheme" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:text="Kurum Adı"
+            android:textColor="#ffffff"
+            android:textColorLink="@color/transparent"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtDateRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="20dp"
+            android:text="2018-01-01"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtDateRow"
+            android:layout_alignLeft="@+id/view"
+            android:layout_alignStart="@+id/view"
+            android:text="@string/scanning"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTaxAmoPosted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtKdvRatio"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtKdvRatio"
+        android:layout_marginBottom="43dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtAmount"
+        android:layout_alignBottom="@+id/edtAmount"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/spCategory"
+        android:layout_toRightOf="@+id/spCategory"
+        android:text="₺"
+        android:textColor="@color/UlensColor"
+        android:textSize="22sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/txtAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtTaxAmount"
+        android:layout_alignRight="@+id/txtTaxAmount"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginRight="35dp"
+        android:text="KDV"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/txtTaxAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtKdvAmount"
+        android:layout_alignBottom="@+id/edtKdvAmount"
+        android:layout_alignLeft="@+id/edtKdvAmount"
+        android:layout_alignStart="@+id/edtKdvAmount"
+        android:text="@string/scanning"
+        android:textColor="@color/UlensColor"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="330dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="15dp">
+
+
+            <EditText
+                android:id="@+id/edtInvoiceNo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spPayment"
+                android:layout_alignStart="@+id/spPayment"
+                android:layout_alignTop="@+id/txtInvoiceNo"
+                android:background="@color/transparent"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:text="0000"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/edtDescription"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_marginBottom="7dp"
+                app:srcCompat="@drawable/icondescription" />
+
+            <TextView
+                android:id="@+id/txtKdvRatio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_alignStart="@+id/view2"
+                android:layout_below="@+id/view2"
+                android:layout_marginTop="17dp"
+                android:text="KDV Oranı"
+                android:textSize="16sp"
+                android:visibility="visible"
+                tools:ignore="NotSibling" />
+
+            <Switch
+                android:id="@+id/swBillable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/view2"
+                android:layout_alignRight="@+id/view2"
+                android:layout_alignTop="@+id/txtKdvRatio"
+                android:visibility="invisible"
+                tools:ignore="NotSibling" />
+
+            <EditText
+                android:id="@+id/edtTax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/swBillable"
+                android:layout_alignRight="@+id/swBillable"
+                android:layout_below="@+id/swBillable"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtTax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtTaxAmoPosted"
+                android:layout_alignStart="@+id/txtTaxAmoPosted"
+                android:layout_below="@+id/swBillable"
+                android:layout_marginTop="15dp"
+                android:text="@string/taxPrice"
+                android:visibility="invisible"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/txtPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtTax"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/paymentMethod"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spPayment"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/txtPayment"
+                android:layout_toEndOf="@+id/txtAmount"
+                android:layout_toRightOf="@+id/txtAmount"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edtInvoiceNo"
+                android:layout_marginTop="15dp"
+                android:text="@string/billDescription"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_toEndOf="@+id/txtTax"
+                android:layout_toRightOf="@+id/txtTax"
+                android:ems="10"
+                android:hint="@string/billNotDescripted"
+                android:inputType="textPersonName"
+                android:theme="@style/MyEditTextTheme" />
+
+            <Spinner
+                android:id="@+id/spKdvRatio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/edtTax"
+                android:layout_alignLeft="@+id/spPayment"
+                android:layout_alignStart="@+id/spPayment" />
+
+            <Button
+                android:id="@+id/btnSubmitDetail"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtDescription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@+id/txtKdvRatio"
+                android:layout_toRightOf="@+id/txtKdvRatio"
+                android:background="@drawable/roundedcorners"
+                android:scrollHorizontally="true"
+                android:text="@string/btnsubmit"
+                android:textColor="#ffffff"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtInvoiceNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtPayment"
+                android:layout_marginTop="15dp"
+                android:text="Fiş No"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txtToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTaxAmoPosted"
+        android:layout_alignStart="@+id/txtTaxAmoPosted"
+        android:layout_below="@+id/edtDescription"
+        android:layout_marginTop="11dp"
+        tools:ignore="NotSibling" />
+
+    <Spinner
+        android:id="@+id/spCategory"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/txtAmount"
+        android:layout_marginStart="5dp"
+        android:spinnerMode="dialog"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtTaxAmount"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:digits="0123456789.,$"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/UlensColor"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edtKdvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_marginLeft="81dp"
+        android:layout_marginStart="81dp"
+        android:layout_toEndOf="@+id/edtAmount"
+        android:layout_toRightOf="@+id/edtAmount"
+        android:background="@color/transparent"
+        android:ems="10"
+        android:digits="0123456789.,$"
+        android:inputType="numberDecimal"
+        android:text="@string/scanning"
+        android:textColor="@color/UlensColor"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/view2"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/ic_remove" />
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homepageBackground"
+    tools:context=".DetailActivities.CompletedDetails">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlBarCompletedDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/ulensPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Masraf"
+        app:titleMarginStart="75dp"
+        app:titleTextColor="@android:color/white" />
+
+    <View
+        android:id="@+id/shadow2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tlBarCompletedDetail"
+        android:background="@drawable/toolbar_shadow" />
+
+    <Button
+        android:id="@+id/btnBackCompleted"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/iconback" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tlBarCompletedDetail">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/ulenslogo" />
+
+                <TextView
+                    android:id="@+id/txtTL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_marginStart="86dp"
+                    android:text="₺"
+                    android:textColor="@color/ulensPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtAmComDetail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_toEndOf="@+id/txtTL"
+                    android:text="30.00"
+                    android:textColor="@color/ulensPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtComDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView2"
+                    android:layout_alignStart="@+id/txtTL"
+                    android:layout_marginTop="13dp"
+                    android:text="Okan Dönmez"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtComDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/txtTL"
+                    android:layout_marginBottom="15dp"
+                    android:text="Expense Date : 12 Tem 2018"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlExpenseDetails"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="175dp"
+                android:background="@android:color/white">
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_alignStart="@+id/rlExpenseDetails"
+                    android:layout_alignTop="@+id/rlExpenseDetails"
+                    android:layout_below="@+id/txtComDescr"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Merchant" />
+
+                <TextView
+                    android:id="@+id/txtComMerchant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="37dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_alignStart="@+id/rlExpenseDetails"
+                    android:layout_alignTop="@+id/rlExpenseDetails"
+                    android:layout_below="@+id/txtComMerchant"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="82dp"
+                    android:text="Description" />
+
+                <TextView
+                    android:id="@+id/txtComDescr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_below="@+id/textView4"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/keyline_1_minus_8dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/view6"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Category" />
+
+                <TextView
+                    android:id="@+id/txtComCategoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

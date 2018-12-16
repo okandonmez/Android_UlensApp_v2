@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UlensApp</string>
+
+    <!-- Login Screen -->
+    <string name="loginmotto">Super-easy &amp; lightning fast employee reimbursement for small businesses</string>
+    <string name="loginButton">Log In</string>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <string name="scanning">Taranıyor</string>
+    <string name="taxPrice">Vergi</string>
+    <string name="paymentMethod">Ödeme Yöntemi</string>
+    <string name="billDescription"><b>Fiş Detayı</b></string>
+    <string name="billNotDescripted"><font size="12">Fiş Detayı Girilmemiş</font></string>
+    <string name="btnsubmit">Gönder</string>
+
+    <array name="spinnerCategory">
+        <item>Uçak Bileti</item>
+        <item>Eğlence</item>
+        <item>Etkinlik</item>
+        <item>Sabit Kıymet</item>
+        <item>Hediye</item>
+        <item>Yemek</item>
+        <item>Çeşitli</item>
+        <item>Ofis İhtiyaçları</item>
+
+    </array>
+
+</resources>
